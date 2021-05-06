@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="assets/img/minilogo.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <script src="assets/js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/06392c1ddc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Toolbox HSE</title>
+</head>
+
+
+<body>
+
+    <!------------------------------------------ Barre de navigation -------------------------------------------->
+
+
+    <nav class="navbar navbar-expand-lg sticky-top pt-0 pb-0" id="navbar">
+        <div class="container-fluid">
+            <div class="row col-12">
+                <h2 class="col-md-3"><img class=logo src="assets/img/logo.PNG" alt="logo">
+                    EasySafety</h2>
+                <div class="compteur col-md-6">
+                    <a class="btn col-12"   data-bs-toggle="collapse" href="#compteurs_at" role="button"
+                        aria-expanded="false" aria-controls="collapsenavbar">
+                        <p class= "bloc" id="timer"></p>
+                        <img class="bloc" src="assets/img/chevron.png" alt="chevron" id="chevron">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="link nav-link" id="connexion" aria-current="page" data-bs-toggle="modal"
+                        href="#modalConnexion">BONJOUR TOM</a>
+                    <a class="link nav-link" id="inscription" aria-current="page" href="#!">ESPACE PERSONNEL</a>
+                </div>
+                <div class="collapse container-fluid" id="compteurs_at">
+                    <div class="row" id="accidents">
+                        <div class="col-sm-4">
+                            <span id="atSimple"></span></i> AT avec arrêt
+                        </div>
+                        <div class="col-sm-4" >
+                            <span id="atGrave"></span></i> AT graves
+                        </div>
+                        <div class="col-sm-4">
+                            <span id="atMortel"></span></i> AT mortels
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!--------------------------------------------- Accueil ------------------------------------------------->
+
+    <div class="container-fluid dashboard">
+        <div class="row">
+            <div class="col-sm-2 col-4 menu">
+                <a class="btn btn-danger col-12" data-bs-toggle="collapse" href="#menu1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Accidents de travail
+                </a>
+                <div class="collapse text-align-center" id="menu1">
+                    <p class="my-2"><a href="#!"><i class="far fa-check-square"></i> Suivi des accidents</a></p>
+                    <p class="my-2"><a href="#!"><i class="fas fa-chart-line"></i> Statistiques</a></p>
+                    <p class="my-2"><a href="#!"><i class="fas fa-exclamation-triangle"></i> Flash AT</a></p>
+                </div>
+                <a class="btn btn-danger col-12" data-bs-toggle="collapse" href="#menu2" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Gestion des EPI
+                </a>
+                <div class="collapse text-align-center" id="menu2">
+                    <p class="my-2"><a href="#!">Tableau</a></p>
+                    <p class="my-2"><a href="#!">Statistiques</a></p>
+                    <p class="my-2"><a href="#!">Flash AT</a></p>
+                </div>
+                <a class="btn btn-danger col-12" data-bs-toggle="collapse" href="#menu3" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Affichages
+                </a>
+                <div class="collapse text-align-center" id="menu3">
+                    <p class="my-2"><a href="#!"><i class="bi bi-cone-striped"></i> Sécurité</a></p>
+                    <p class="my-2"><a href="#!"><i class="fas fa-fire"></i> Incendie</a></p>
+                    <p class="my-2"><a href="#!"><i class="fas fa-leaf"></i> Environnement</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+
+
+
+
+</body>
+
+</html>
