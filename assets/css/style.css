@@ -1,20 +1,31 @@
-@charset "UTF-8";
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   /* Utilisation de la police Montserra pour tout le body */
   margin: 0;
 }
 
-/*--------------------------------------Barre de NAV---------------------------------------------*/
-nav {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #b11b1b;
-  color: white;
+body .btn-check:focus + .btn, body .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-nav #burger {
-  width: 28px;
+/*--------------------------------------Barre de NAV---------------------------------------------*/
+nav {
+  font-family: 'Antonio', sans-serif;
+  background-color: #b41e1e;
+  color: white;
   height: auto;
+}
+
+nav .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+nav h1 {
+  font-weight: bold;
 }
 
 nav .link {
@@ -33,22 +44,6 @@ nav .link:hover {
   text-decoration: underline;
 }
 
-nav .btn {
-  text-decoration: none;
-  color: #fafafa;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transition: all 0.5s;
-}
-
-nav .btn:hover {
-  color: #f8dddd;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-transition: all 0.5s;
-  text-decoration: underline;
-}
-
 nav .nav-link {
   padding: 0;
 }
@@ -58,13 +53,17 @@ nav #connexion {
 }
 
 nav p {
-  margin-bottom: 0;
+  margin-bottom: 2px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
 }
 
 nav a {
   text-align: right;
+  font-weight: bold;
+  margin-bottom: 2px;
 }
 
 nav .bloc {
@@ -72,16 +71,9 @@ nav .bloc {
 }
 
 nav #chevron {
-  height: 12px;
+  height: 7px;
   width: 70px;
   margin: auto;
-}
-
-nav .btn-check:focus + .btn,
-nav .btn:focus {
-  /*enlève l'ombre des boutons due à bootstrap*/
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 /*--------------------------------------------compteur d'AT------------------------------------------*/
@@ -89,17 +81,19 @@ nav .btn:focus {
   height: auto;
   display: none;
   padding: 5px;
-  background: #b11b1b;
+  background: #b41e1e;
 }
 
 #accidents {
   color: white;
   text-align: center;
+  font-size: 1.2em;
+  background-color: #b41e1e;
 }
 
 /*--------------------------------------------Page d'accueil------------------------------------------*/
 .accueil {
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 .accueil p {
@@ -116,6 +110,22 @@ nav .btn:focus {
 
 .accueil .bold {
   font-weight: bold;
+}
+
+/*--------------------------------------------Dashborad------------------------------------------*/
+.dashboard {
+  background-color: #e2e2e2;
+}
+
+.dashboard .menu {
+  height: 100vh;
+  padding-top: 3vh;
+  background-color: #b41e1e;
+}
+
+.dashboard .menu a {
+  text-decoration: none;
+  color: white;
 }
 
 /*--------------------------------------------Responsive design------------------------------------------*/
